@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seleciona</title>
+    <link rel="stylesheet" href="estiloSelecionarConta.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerNav">
+          <a href="C:\Users\pelac\OneDrive\Documentos\Estudos\Programação para Web\Aula 10\src\views\principal\menuPrincipal.html" class="navbar-logo">AMIGOSBANK</a>
+          <ul class="navbar-menu">
+            <li><a href="./views/pessoa/cadastrar.html">Registrar</a></li>
+            <li><a href="./views/contaCorrente/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <h1>Selecione a Conta</h1>
+  <ul class="account-list">
+    <li class="account-item">
+      <label>
+        <input type="radio" name="account" value="1">
+        Conta Corrente
+      </label>
+    </li>
+    <li class="account-item">
+      <label>
+        <input type="radio" name="account" value="2">
+        Poupança
+      </label>
+    </li>
+    <li class="account-item">
+      <label>
+        <input type="radio" name="account" value="3">
+        Investimentos
+      </label>
+    </li>
+    <li class="account-item">
+      <label>
+        <input type="radio" name="account" value="other">
+        Outra Conta
+      </label>
+      <input type="text" class="custom-account-input" placeholder="Digite o nome da conta">
+    </li>
+  </ul>
+
+  <footer>
+    &copy; 2023 AmigosBank. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    const otherRadio = document.querySelector('input[type="radio"][value="other"]');
+    const customAccountInput = document.querySelector('.custom-account-input');
+
+    otherRadio.addEventListener('change', function() {
+      if (this.checked) {
+        customAccountInput.style.display = 'block';
+      } else {
+        customAccountInput.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

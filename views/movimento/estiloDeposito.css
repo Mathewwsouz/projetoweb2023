@@ -1,0 +1,109 @@
+body {
+    background-color: #F0F6FC;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .navbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #007bff;
+    color: #ffffff;
+    height: 60px;
+    margin: 0px;
+}
+  
+.containerNav { 
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.navbar-menu li {
+    margin-left: 20px;
+}
+  
+.navbar-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+  
+  h1 {
+    color: #000000;
+    text-align: center;
+  }
+  
+  .deposit-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+  }
+  
+  .deposit-pago {
+    background-color: #b2eb86;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: auto;
+  }
+
+  .deposit-nao-pago {
+    background-color: #eb8686;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: auto;
+  }
+
+  .valor-recebido {
+    color: #000000;
+    margin-left: 15px;
+  }
+
+  .valor-total {
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .pagamento-recebido {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .data-deposito {
+    color: #000000;
+    font-size: 0.8em;
+    float: right;
+  }
+
+  footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

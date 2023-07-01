@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transferência</title>
+    <link rel="stylesheet" href="estiloTransferencia.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerNav">
+          <a href="C:\Users\pelac\OneDrive\Documentos\Estudos\Programação para Web\Aula 10\src\views\principal\menuPrincipal.html" class="navbar-logo">AMIGOSBANK</a>
+          <ul class="navbar-menu">
+            <li><a href="./views/pessoa/cadastrar.html">Registrar</a></li>
+            <li><a href="./views/contaCorrente/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1>Transferência Bancária</h1>
+        <form id="transferForm">
+          <div class="form-group">
+            <label for="sender">Remetente:</label>
+            <input type="text" id="sender" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient">Destinatário:</label>
+            <input type="text" id="recipient" required>
+          </div>
+          <div class="form-group">
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        &copy; 2023 Bank. Todos os direitos reservados.
+      </footer>
+    
+    <script>
+        document.getElementById("transferForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+  
+        // Obter os valores do formulário
+        var sender = document.getElementById("sender").value;
+        var recipient = document.getElementById("recipient").value;
+        var amount = document.getElementById("amount").value;
+  
+        // Exemplo de lógica de transferência bancária
+        if (sender && recipient && amount) {
+            alert("Transferência bancária realizada:\nRemetente: " + sender + "\nDestinatário: " + recipient + "\nValor: " + amount);
+        }
+        });
+    </script>
+</body>
+</html>

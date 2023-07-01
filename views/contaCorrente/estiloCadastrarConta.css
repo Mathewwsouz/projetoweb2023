@@ -1,0 +1,123 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.navbar {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #007bff;
+  color: #ffffff;
+  height: 60px;
+}
+
+.containerNav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-menu li a:hover {
+  text-decoration: underline;
+}
+  
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+  
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #333333;
+}
+  
+form {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+label {
+  margin-bottom: 10px;
+  color: #333333;
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="CPF"],
+input[type="telefone"],
+input[type="endereço"],
+input[type="password"],
+input[type="confirmPassword"] {
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(20, 123, 220);
+  outline: none;
+}
+  
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+  
+input[type="submit"]:hover {
+  background-color: #02c702;
+}
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

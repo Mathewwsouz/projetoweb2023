@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listarSaldo</title>
+    <link rel="stylesheet" type="text/css" href="estiloListarSaldo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerNav">
+          <a href="C:\Users\pelac\OneDrive\Documentos\Estudos\Programação para Web\Aula 10\src\views\principal\menuPrincipal.html" class="navbar-logo">AMIGOSBANK</a>
+          <ul class="navbar-menu">
+            <li><a href="./src/views/pessoa/cadastrar.html">Registrar</a></li>
+            <li><a href="./src/views/contaCorrente/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1>Seu Saldo</h1>
+        <div class="saldo">
+        <h2>R$ <span id="saldo">0,00</span></h2>
+    </div>
+
+    <hr class="barra1">
+
+    <h3>Gerenciamento</h3>
+
+    <div class="div-add">
+      <div class="coluna">
+        <button class="button2" onclick="adicionarValor(1)">+ R$ 1,00</button>
+        <button class="button2" onclick="adicionarValor(5)">+ R$ 5,00</button>
+        <button class="button2" onclick="adicionarValor(10)">+ R$ 10,00</button>
+        <button class="button2" onclick="adicionarValor(20)">+ R$ 20,00</button>
+        <button class="button2" onclick="adicionarValor(50)">+ R$ 50,00</button>
+        <button class="button2" onclick="adicionarValor(100)">+ R$ 100,00</button>
+        <button class="button2" onclick="adicionarValor(500)">+ R$ 500,00</button>
+      </div>
+    </div>
+
+    <hr class="barra1">
+
+    <h1>Valor Atual: <span id="valor-atual">0</span> reais</h1>
+
+    <button class="button2" onclick="limparValor()">LIMPAR</button>
+
+    <div class="containerSaldo">
+      <button id="buttonAdd" class="buttonAdd" onclick="addSaldo()">Adicionar Saldo</button>
+      <button id="buttonRetirar" class="buttonRetirar" onclick="tirarSaldo()">Retirar Saldo</button>
+    </div>
+
+    <script>
+      var saldoAtual = 0;
+      var valorAtual = 0;
+      var valorAtualElement = document.getElementById("valor-atual");
+      var saldoAtualElement = document.getElementById("saldo")
+
+      function limparValor() {
+        valorAtual = 0;
+        valorAtualElement.innerText = valorAtual;
+      }
+
+      function adicionarValor(valor) {
+      valorAtual += valor;
+      valorAtualElement.innerText = valorAtual;
+    }
+    
+      function addSaldo() {
+        saldoAtual += valorAtual
+        saldoAtualElement.innerText = saldoAtual;
+      }
+
+      function tirarSaldo() {
+        saldoAtual -= valorAtual
+        saldoAtualElement.innerText = saldoAtual;
+      }
+    </script> 
+    
+    <footer>
+      &copy; 2023 AmigosBank. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
